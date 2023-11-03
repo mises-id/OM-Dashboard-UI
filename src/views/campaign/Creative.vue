@@ -341,10 +341,10 @@ export default {
           { required: true, message: 'Creative name can not be empty.', trigger: 'change' }
         ],
         title: [
-          { required: true, message: 'Title can not be empty.', trigger: 'change' }
+          { required: false, message: 'Title can not be empty.', trigger: 'change' }
         ],
         descn: [
-          { required: true, message: 'Description can not be empty.', trigger: 'change' }
+          { required: false, message: 'Description can not be empty.', trigger: 'change' }
         ]
       }
     }
@@ -697,7 +697,7 @@ export default {
         vq: 'test=preview',
         imptrackers: [],
         icon_url: this.appInfo.icon,
-        description: this.creative.descn || 'Test Description',
+        description: this.creative.descn || '',
         title: this.creative.title || '',
         app_name: this.appInfo.appName,
         app_id: this.appInfo.appId,
