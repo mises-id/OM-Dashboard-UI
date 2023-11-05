@@ -684,7 +684,7 @@ export default {
         const res = await searchAppFromStore({ appId: id })
         if (res.code === 0 && res.data) {
           this.promote = res.data
-          this.form.platform = res.data.platform
+          this.form.platform = res.data.plat
           this.form.clickUrl = res.data.previewUrl || ''
         }
       } catch (e) {
