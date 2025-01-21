@@ -186,7 +186,7 @@
           </a-col>
 
           <a-col :span="7" style="padding: 24px" class="rightSide" :style="{height: '658px'}">
-            <div style="margin-top: 5px;margin-right: 8px;margin-bottom: 48px;"> </div>
+            <div style="margin-top: 5px;margin-right: 8px;margin-bottom: 48px;"> Please Compress image with https://tinypng.com/ first!!</div>
             <div style="display: inline-block;position: absolute;right: 24px;top: 24px;">
               <a-upload :file-list="[]" :accept="['image/jpeg,image/png,image/gif', null, 'video/mp4'][middleBoxSelected.type]" :before-upload="doUpload" :multiple="true">
                 <a-button type="primary" :disabled="creative.id!==null" class="btn btn-primary btn-sm btn-outline">Upload</a-button>
@@ -542,8 +542,8 @@ export default {
               _this.$message.error('Image already exists', 5)
               return false
             }
-            if (file.size > 2097152) {
-              _this.$message.error('Max file size 2M.', 5)
+            if (file.size > 262144) {
+              _this.$message.error('Max file size 250KB. Please crompress image file with https://tinypng.com/', 5)
               return false
             }
             const { md5sum, path } = res.data
