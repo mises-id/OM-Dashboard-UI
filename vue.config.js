@@ -86,7 +86,8 @@ const vueConfig = {
     }
   },
 
-  devServer: {
+  devServer: { 
+    public: 'ads-dash.test.mises.site:443',
     // development server port 8000
     port: 8081,
     // If you want to turn on the proxy, please remove the mockjs /src/main.jsL11

@@ -538,7 +538,7 @@ export default {
         type: 0,
         promoteType: 0,
         platform: 0,
-        openType: 0,
+        openType: 2,
         placementTargetingList: [],
         plcAppId: undefined,
         placementId: undefined,
@@ -734,7 +734,7 @@ export default {
       try {
         _this.$refs.basicForm.validate((b) => {
           if (_this.form.promoteType === 1 && !_this.form.openType) {
-            _this.form.openType = 1
+            _this.form.openType = 2
           } else if (_this.form.promoteType === 0) {
             _this.form.openType = 0
           }
