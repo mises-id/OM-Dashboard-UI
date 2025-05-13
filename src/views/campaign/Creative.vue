@@ -542,8 +542,8 @@ export default {
               _this.$message.error('Image already exists', 5)
               return false
             }
-            if (file.size > 262144) {
-              _this.$message.error('Max file size 250KB. Please crompress image file with https://tinypng.com/', 5)
+            if (file.size > 120000) {
+              _this.$message.error('Max file size 120KB. Please crompress image file with https://tinypng.com/', 5)
               return false
             }
             const { md5sum, path } = res.data
