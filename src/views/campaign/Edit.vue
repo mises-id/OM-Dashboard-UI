@@ -578,13 +578,13 @@ export default {
           ],
           clickUrl: [
             { required: true, message: 'URL can not be empty', trigger: 'change' },
-            { pattern: /^(?=^.{3,255}$)(http(s)?:\/\/)?[a-zA-Z0-9.-]{1,250}(?:\.[a-zA-Z]{2,})+.*$/, message: 'Illegal URL', trigger: 'change' }
+            { pattern: /^(?=^.{3,255}$)(http(s)?:\/\/)?[a-zA-Z0-9._-]{1,250}(?:\.[a-zA-Z]{2,})+.*$/, message: 'Illegal URL', trigger: 'change' }
           ],
           imprTkUrls: [
-            { pattern: /^(?=^.{3,255}$)(http(s)?:\/\/)?[a-zA-Z0-9.-]{1,250}(?:\.[a-zA-Z]{2,})+.*$/, message: 'Illegal URL', trigger: 'change' }
+            { pattern: /^(?=^.{3,255}$)(http(s)?:\/\/)?[a-zA-Z0-9._-]{1,250}(?:\.[a-zA-Z]{2,})+.*$/, message: 'Illegal URL', trigger: 'change' }
           ],
           clickTkUrls: [
-            { pattern: /^(?=^.{3,255}$)(http(s)?:\/\/)?[a-zA-Z0-9.-]{1,250}(?:\.[a-zA-Z]{2,})+.*$/, message: 'Illegal URL', trigger: 'change' }
+            { pattern: /^(?=^.{3,255}$)(http(s)?:\/\/)?[a-zA-Z0-9._-]{1,250}(?:\.[a-zA-Z]{2,})+.*$/, message: 'Illegal URL', trigger: 'change' }
           ],
           startTime: [
             { validator: validateStartTime, trigger: 'change' }
