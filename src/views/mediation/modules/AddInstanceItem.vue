@@ -40,7 +40,7 @@
         </div>
         <!-- 状态: bindding or waterfall -->
         <span slot="hbStatus" class="row-edit" slot-scope="record">
-          <a-checkbox :disabled="showBiddingFlag || ![0, 2, 14, 17, 23, 24, 25].includes(record.adnId)" :checked="record.hbStatus === 1" @change="onStatusChange(record)"></a-checkbox>
+          <a-checkbox :disabled="showBiddingFlag || ![0, 2, 3, 14, 17, 23, 24, 25].includes(record.adnId)" :checked="record.hbStatus === 1" @change="onStatusChange(record)"></a-checkbox>
         </span>
         <!-- Instance Name -->
         <span slot="insName" class="row-edit" slot-scope="record">
